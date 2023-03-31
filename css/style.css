@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background: #E1D5C9
 }
@@ -45,118 +50,73 @@ h1 {
 
 }
 
-
-
-
-.portfolio .portfolio-item {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
-}
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
-
-.portfolio-modal .btn-close {
-  color: #1abc9c;
-  font-size: 2rem;
-  padding: 1rem;
-}
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
-
-/* about section start */
-
+/* SOBRE NOSOTROS*/
 .about_section {
   width: 100%;
-  float: left;
   padding-bottom: 0px;
+  height: 100%;
+  display: flex; /* añade display flex para alinear verticalmente */
+  align-items: center; /* alinea verticalmente */
+}
+
+.row {
+  align-items: center; /* centra verticalmente el contenido dentro de la fila */
 }
 
 .about_taital_main {
-  width: 100%;
-  padding-left: 100px;
-  padding-top: 100px;
-}
-
-.padding_right_0 {
-  padding-right: 0%;
+  text-align: right;
 }
 
 .about_taital {
-  width: 100%;
-  float: left;
   font-size: 40px;
   color: #000000;
   font-weight: bold;
-  text-align: right;
   padding-right: 20px;
 }
 
 .about_text {
-  width: 100%;
-  float: left;
   font-size: 18px;
   color: #000000;
   margin: 0px;
   padding-top: 20px;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-right: 20px;
   text-align: right;
 }
 
-.readmore_bt {
-  width: 170px;
-  float: left;
-  margin-top: 50px;
-}
-
-/* .readmore_bt a {
-  width: 100%;
-  float: left;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #000d10;
-  text-align: center;
-  padding: 10px 0px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-} */
-
-/* .readmore_bt a:hover {
-  color: #ffffff;
-  background-color: #2b2278;
-} */
-
 .about_img {
-  height: 100vh;
-  float: right;
-  position: fixed;
-  margin-right: 0px;
+  height: 100vh; /* ajusta la altura de la imagen al 100% del contenedor */
+  margin: 0px;
+  display: block;
+  object-fit: cover; /* ajusta la imagen al contenedor sin deformarse */
+  float: left;
 }
 
-/* overflow: hidden;
-  object-fit: cover;  width: 40vw; min-width: 100%; transform: translate(-50%, -50%);  top: 50%;*/
+@media (max-width: 767px) {
+  .about_img {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .about_taital {
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+  }
+
+  .about_text {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 100px;
+    text-align: justify;
+  }
+}
