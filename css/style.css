@@ -37,9 +37,24 @@ h1 {
 
 
 /*FORMULARIO DE CONTACTO*/
-.formularioContacto {
-  padding-top: 70px;
-  text-align: center;
+.paginaContacto {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .paginaContacto {
+    overflow-y: auto;
+    padding-bottom: 0%;
+    padding-top: 50px;
+  }
+}
+
+.bg-color {
+  background-color: #eee7e0;
 }
 
 /* ENCONTRANOS */

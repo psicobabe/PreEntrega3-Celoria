@@ -58,46 +58,65 @@
         </div>
     </nav>
     <!-- fin barra de navegación fixed-->
+    
+    <div class="paginaContacto">
 
-    <!-- Contacto -->
-    <section class="page-section" id="contact">
-        <div class="container p-5">
-            <br>
-            <h2 class="page-section-heading text-center">Contáctanos</h2>
+        <div class="container-fluid py-5"
+            style="background-image: url(../img/fotocontacto.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+            <div class="container py-5">
 
-            <!-- Inicio Formulario-->
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" data-sb-validations="required" />
-                            <label for="name">Nombre completo</label>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="bg-color rounded p-4 p-sm-5">
+                            <h1 class="display-5 text-center mb-5">Contáctanos</h1>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="gname"
+                                            placeholder="Gurdian Name">
+                                        <label for="gname">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="gmail"
+                                            placeholder="Gurdian Email">
+                                        <label for="gmail">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="cname"
+                                            placeholder="Child Name">
+                                        <label for="cname">Teléfono</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="cage"
+                                            placeholder="Child Age">
+                                        <label for="cage">Motivo de contacto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0"
+                                            placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Tu mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-dark py-3 px-4" type="submit">ENVIAR</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" data-sb-validations="required,email">
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" />
-                            <label for="phone">Teléfono</label>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Mensaje</label>
-
-                            <!-- Botón -->
-                            <br>
-                            <button class="btn btn-dark" type="submit">ENVIAR</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+    </div>
 
     <!-- Footer fijo en la parte inferior de la página -->
     <footer class="fixed-bottom bg-dark text-light py-2">
