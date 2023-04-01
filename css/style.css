@@ -1,15 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background: #E1D5C9
 }
 
 h1 {
   font-family: 'Patrick Hand SC', cursive;
-  padding-left: 20px;
 }
 
 /* INDEX */
@@ -46,6 +40,30 @@ h1 {
 .formularioContacto {
   padding-top: 70px;
   text-align: center;
+}
+
+/* ENCONTRANOS */
+
+.dondeencontrarnos {
+  padding-top: 50px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.titulo-local {
+  color: #F1AD1F;
+}
+
+.textoLocal {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+#mapaLocal {
+  padding-top: 0px;
+  height: 40vh;
 }
 
 /* SOBRE NOSOTROS*/
@@ -125,7 +143,7 @@ h1 {
   text-align: center;
 }
 
-/* Galerías */
+/* Servicios: Galerías */
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -211,4 +229,18 @@ h1 {
     padding-bottom: 100px;
     text-align: justify;
   }
+
+  /* media encontranos */
+
+  .titulo-local {
+    padding-top: 50px;
+  }
+
+  .textoLocal {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
 }
