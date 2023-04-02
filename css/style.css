@@ -1,218 +1,179 @@
 body {
-  background: #E1D5C9
-}
+  background: #E1D5C9; }
+
 h1 {
-  font-family: 'Patrick Hand SC', cursive;
-}
-/* INDEX */
-/* Fondo Inicio - que la imagen de la portada ocupe toda la pantalla */
+  font-family: 'Patrick Hand SC'; }
+
 .background {
   position: relative;
-  overflow: hidden;
-}
-.background img {
-  position: absolute;
-  object-fit: cover;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-/* contenedor central blanco */
-.background .container {
-  position: relative;
-}
-.background .bg-white {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-/*FORMULARIO DE CONTACTO*/
+  overflow: hidden; }
+  .background img {
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; }
+  .background .container {
+    position: relative; }
+    .background .container .bg-white {
+      background-color: rgba(255, 255, 255, 0.8); }
+
 .paginacontacto {
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.bg-color {
-  background-color: #eee7e0;
-}
-/* ENCONTRANOS */
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .paginacontacto {
+      overflow-y: auto;
+      padding-bottom: 0%;
+      padding-top: 50px; } }
+  .paginacontacto .bg-color {
+    background-color: #eee7e0; }
+
 .dondeencontrarnos {
   padding-top: 50px;
   padding-bottom: 0;
   padding-right: 0;
-  padding-left: 0;
-}
-.titulo-local {
-  color: #F1AD1F;
-}
-.textolocal {
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: justify;
-}
-#mapalocal {
-  padding-top: 0px;
-  height: 40vh;
-}
-/* SOBRE NOSOTROS*/
+  padding-left: 0; }
+  .dondeencontrarnos .local-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .dondeencontrarnos .local-info .titulo-local {
+      color: #F1AD1F; }
+      @media (max-width: 767px) {
+        .dondeencontrarnos .local-info .titulo-local {
+          padding-top: 50px; } }
+    .dondeencontrarnos .local-info .textolocal {
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align: justify; }
+      @media (max-width: 767px) {
+        .dondeencontrarnos .local-info .textolocal {
+          margin-left: 10px;
+          margin-right: 10px;
+          padding-bottom: 50px;
+          text-align: center; } }
+  .dondeencontrarnos #mapalocal {
+    padding-top: 0px;
+    height: 40vh; }
+
 .about_section {
   width: 100%;
   padding-bottom: 0px;
   height: 100%;
   display: flex;
-  align-items: center;
-}
-.row {
-  align-items: center;
-}
-.about_taital_main {
-  text-align: right;
-}
-.about_taital {
-  font-size: 40px;
-  color: #000000;
-  font-weight: bold;
-  padding-right: 20px;
-}
-.about_text {
-  font-size: 18px;
-  color: #000000;
-  margin: 0px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: right;
-}
-.about_img {
-  height: 100vh;
-  margin: 0px;
-  display: block;
-  object-fit: cover;
-  float: left;
-}
-/* SERVICIOS */
+  align-items: center; }
+  .about_section .row {
+    align-items: center; }
+    .about_section .row .about_img {
+      height: 100vh;
+      margin: 0px;
+      display: block;
+      object-fit: cover;
+      float: left; }
+      @media (max-width: 767px) {
+        .about_section .row .about_img {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          max-width: 100%;
+          object-fit: cover; } }
+    .about_section .row .about_taital_main {
+      text-align: right; }
+      .about_section .row .about_taital_main .about_taital {
+        font-size: 40px;
+        color: #000000;
+        font-weight: bold;
+        padding-right: 20px; }
+        @media (max-width: 767px) {
+          .about_section .row .about_taital_main .about_taital {
+            font-size: 40px;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 30px; } }
+      .about_section .row .about_taital_main .about_text {
+        font-size: 18px;
+        color: #000000;
+        margin: 0px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: right; }
+        @media (max-width: 767px) {
+          .about_section .row .about_taital_main .about_text {
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 100px;
+            text-align: justify; } }
+
 .portfolioservicios {
   padding-top: 90px;
-  padding-bottom: 40px;
-}
-.services-section1 {
-  padding-bottom: 50px;
-}
-.card {
-  margin-bottom: 10px;
-}
-.card-img-top {
-  height: 400px;
-  object-fit: cover;
-  cursor: pointer;
-}
-.card-img-top:hover {
-  filter: brightness(70%) saturate(130%);
-  transition: all 0.2s ease-in-out;
-}
-.card-title {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-.card-text {
-  text-align: center;
-}
-/* Servicios: Galerías */
+  padding-bottom: 40px; }
+  .portfolioservicios .services-section1 {
+    padding-bottom: 50px; }
+    .portfolioservicios .services-section1 .card {
+      margin-bottom: 10px; }
+      .portfolioservicios .services-section1 .card .card-img-top {
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer; }
+        .portfolioservicios .services-section1 .card .card-img-top:hover {
+          filter: brightness(70%) saturate(130%);
+          transition: all 0.2s ease-in-out; }
+      .portfolioservicios .services-section1 .card .card-title {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center; }
+      .portfolioservicios .services-section1 .card .card-text {
+        text-align: center; }
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
-  overflow: hidden;
-}
-.portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  background-color: #F1AD1F;
-}
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-.portfolio-modal img {
-  max-height: 85vh;
-  object-fit: contain;
-}
+  overflow: hidden; }
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: #F1AD1F; }
+    .portfolio .portfolio-item .portfolio-item-caption:hover {
+      opacity: 1; }
+
 .portfolio-modal .modal-dialog {
   max-width: unset;
-  width: auto;
-}
-.portfolio-modal .modal-content {
-  background-color: transparent;
-  border: none;
-}
-.portfolio-modal .modal-body {
-  padding: 0;
-}
-.portfolio-modal .modal-body img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-.portfolio-modal .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  padding: 3rem;
-}
-/* MEDIAQUERY */
-/* Media Nosotros */
-@media (max-width: 767px) {
-  .about_img {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    max-width: 100%;
-    object-fit: cover;
-  }
-  .about_taital {
-    font-size: 40px;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 30px;
-  }
-  .about_text {
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 100px;
-    text-align: justify;
-  }
-  /* media encontranos */
-  .titulo-local {
-    padding-top: 50px;
-  }
-  .textolocal {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
-}
-/* media contacto */
-@media screen and (max-width: 768px) {
-  .paginacontacto {
-    overflow-y: auto;
-    padding-bottom: 0%;
-    padding-top: 50px;
-  }
-}
+  width: auto; }
+  .portfolio-modal .modal-dialog .modal-content {
+    background-color: transparent;
+    border: none; }
+    .portfolio-modal .modal-dialog .modal-content .modal-body {
+      padding: 0; }
+      .portfolio-modal .modal-dialog .modal-content .modal-body .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 3rem; }
+      .portfolio-modal .modal-dialog .modal-content .modal-body img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        max-height: 85vh;
+        object-fit: contain; }
